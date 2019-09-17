@@ -1,0 +1,74 @@
+body {
+    font: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
+    background-color: green;
+    
+    
+}
+h1 {
+    text-align: center
+}
+
+.weather-block {
+    width: 50%;
+    font-size: 0;
+    padding-left: 0;
+    margin: auto;
+}
+.weather-block li {
+    
+    outline: 3px solid white; /*  рамка */
+    outline-offset: -3px; /* Выводим рамку внутри элемента */
+    padding: -5px; /* Поля */
+    margin: 0 0;
+    display: inline-block;
+    font-size: 24px;
+    height: 100px;
+    text-align: center;
+     
+}
+
+.weather-block li:nth-child(1) {
+    background-color: #3398cc;
+    width: 50%;
+    }
+.weather-block li:nth-child(2) {
+    background-color: #32cccc;
+    width: 25%;
+}
+.weather-block li:nth-child(3) {
+    background-color: #986699;
+    width: 25%;
+    }
+.weather-block li:nth-child(4) {
+    background-color: #c24847;
+    width: 25%;
+    }
+.weather-block li:nth-child(5) {
+    background-color: #e2664a;
+    width: 25%;
+    }
+.weather-block li:nth-child(6) {
+    background-color: #ffcc66;
+    width: 25%;
+    }
+.weather-block li:nth-child(7) {
+    background-color: #9acc99;
+    width: 25%;
+    }
+.weather-block li:nth-child(8) {
+    background-color: #66999a;
+    width: 25%;
+    }
+.weather-block li:nth-child(9) {
+    background-color: #cc6698;
+    width: 50%;
+    }
+.weather-block li:nth-child(10) {
+    background-color: #339967;
+    width: 25%;
+    }  
+.weather-block li:nth-child(11) {
+    background-color: #666698;
+    width: 100%;
+    }  
+             
