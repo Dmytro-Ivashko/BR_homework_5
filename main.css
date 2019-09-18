@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+	transition: all .1s ease-in;
+}
 body {
     font-family: “Lucida Sans Unicode”, “Lucida Grande”, sans-serif;
     border: 10px solid #2b81ac; 
@@ -12,26 +16,32 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
-h1 h2 {
+h1 {
     font-size: 25px;
 	font-weight: normal;
 	padding: 3px 0;
 }
-
-
-.weather-block {
-    width: 100%;
-    font-size: 0;
-    padding-left: 0;
-    margin: auto;
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+	padding: 3px 0;
 }
-.weather-block li {
-    display: inline-block;
-    font-size: 24px;
-    height: 100px;
-    text-align: center;
-}
+ul {
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+	border: 2px solid #fff;
+    background: #fff;
 
+}
+li {
+	font-size: 25px;
+	display: inline-block;
+	width: 100%;
+	border: 2px solid white;
+	text-align: center;
+	padding: 15px 10px;
+}
 
     /*Dimensions block*/
 .small-block {
@@ -45,37 +55,71 @@ h1 h2 {
 }
 
         /*Color block*/
-.weather-block li:nth-child(1) {
+ul li:nth-child(1){
     background-color: #3398cc;
     }
-.weather-block li:nth-child(2) {
+ul li:nth-child(2) {
     background-color: #32cccc;
 }
-.weather-block li:nth-child(3) {
+ul li:nth-child(3) {
     background-color: #986699;
     }
-.weather-block li:nth-child(4) {
+ul li:nth-child(4) {
     background-color: #c24847;
     }
-.weather-block li:nth-child(5) {
+ul li:nth-child(5) {
     background-color: #e2664a;
     }
-.weather-block li:nth-child(6) {
+ul li:nth-child(6) {
     background-color: #ffcc66;
     }
-.weather-block li:nth-child(7) {
+ul li:nth-child(7) {
     background-color: #9acc99;
     }
-.weather-block li:nth-child(8) {
+ul li:nth-child(8) {
     background-color: #66999a;
     }
-.weather-block li:nth-child(9) {
+ul li:nth-child(9) {
     background-color: #cc6698;
     }
-.weather-block li:nth-child(10) {
+ul li:nth-child(10) {
     background-color: #339967;
     }  
-.weather-block li:nth-child(11) {
+ul li:nth-child(11) {
     background-color: #666698;
-    }  
-             
+    } 
+
+    /*CSS ic*/
+    .wi-celsius {
+        font-size: 30px;
+    }
+    
+    .wi-night-hail,
+    .wi-day-sunny,
+    .wi-meteor,
+    .wi-day-cloudy-high,
+    .wi-hot,
+    .wi-day-sleet-storm,
+    .wi-hail,
+    .wi-night-clear,
+    .wi-night-cloudy
+    {
+        font-size: 35px;
+    }
+        
+    span, i{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    /*Effect*/
+    ul:hover > li {
+        opacity: 0.6;
+    }
+    
+    ul li:hover {
+        opacity: 1;
+    }
+    span {
+        margin-top: 15px;
+        opacity: 0.5;
+    }
